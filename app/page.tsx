@@ -42,29 +42,6 @@ export default function Home() {
 					</defs>
 				</svg>
 			</div>
-
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
-			<div className="relative h-[180px] w-full max-w-[240px]">globals</div>
 		</main>
 	)
 }

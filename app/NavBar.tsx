@@ -30,18 +30,18 @@ export default function NavBar() {
 	const [hovered, setHovered] = React.useState("none")
 
 	return (
-		<div className="relative w-full px-16 py-4">
+		<div className="relative w-full px-2 sm:px-16 py-4">
 			<div className="flex h-fit w-full flex-row items-center justify-between uppercase text-neutral-300">
 				<div className="flex items-center justify-center rounded-full border-2 p-2 text-lg font-semibold">
           BM
 				</div>
-				<div className="flex items-center justify-around gap-0 text-base font-normal uppercase">
+				<div className="flex flex-row flex-wrap items-center justify-around gap-0 text-base font-normal uppercase">
 					{redes.map((red) => (
-						<Link
+						<button
 							key={red.name}
-							href={red.url}
-							target="_blank"
-							rel="noopener noreferrer"
+							// href={red.url}
+							// target="_blank"
+							// rel="noopener noreferrer"
 							className="relative flex flex-col items-center justify-center px-6 py-1"
 							onMouseEnter={() => setHovered(red.name)}
 							onMouseLeave={() => setHovered("none")}
@@ -71,7 +71,7 @@ export default function NavBar() {
 								)}
 							</AnimatePresence>
 							<span className="z-10 mix-blend-exclusion">{red.name}</span>
-						</Link>
+						</button>
 					))}
 				</div>
 			</div>
