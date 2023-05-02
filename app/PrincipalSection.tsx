@@ -15,10 +15,10 @@ export default function PrincipalSection() {
 			</div>
 			<div className="relative my-8 h-px w-full bg-neutral-100/50" />
 			<div className="relative flex h-0 w-full items-center justify-end sm:pr-8">
-				<ButtonPlay />
+				<ButtonPlay classes="-top-2 right-8" />
 				{/* hacer otro como si fuera una bocina sonando */}
 			</div>
-			<div className="relative aspect-h-6 aspect-w-16">
+			<div className="relative aspect-h-10 sm:aspect-h-6 aspect-w-16">
 				<Image
 					src="/cover.jpg"
 					alt="Picture of the author"

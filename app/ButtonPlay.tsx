@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import useSound from "use-sound"
 
 
-export default function ButtonPlay() {
+export default function ButtonPlay({classes} : {classes: string}) {
 	const [hovered, setHovered] = React.useState(false)
 	const [pressed, setPressed] = React.useState(false)
 	const [play, { stop }] = useSound("/MA.mp3", { volume: 0.1 })
@@ -20,7 +20,7 @@ export default function ButtonPlay() {
 
 	return (
 		<motion.div
-			className="group absolute right-8 z-10 flex h-32 sm:h-48 w-32 sm:w-48 cursor-pointer items-center justify-center rounded-full "
+			className={`group absolute ${classes} z-10 flex h-32 sm:h-48 w-32 sm:w-48 cursor-pointer items-center justify-center rounded-full `}
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => !pressed && setHovered(false)}
 			onClick={() => handleClick()}

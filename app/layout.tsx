@@ -22,6 +22,7 @@ export default function RootLayout({
 				<NavBar />
 				{children}
 				{/* footer */}
+				<NavBar />
 				<TinyListenNowBanner />
 			</body>
 		</html>

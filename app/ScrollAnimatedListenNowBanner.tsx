@@ -1,11 +1,15 @@
 "use client"
-import {  motion, useScroll, useSpring, useVelocity } from "framer-motion"
-import { useRef } from "react"
-import {
+import {  
+	motion, 
+	useScroll, 
+	useSpring, 
+	useVelocity,
 	useTransform,
 	useMotionValue,
-	useAnimationFrame
+	useAnimationFrame 
 } from "framer-motion"
+import { useRef } from "react"
+
 const wrap = (min: number, max: number, v: number) => {
 	const rangeSize = max - min
 	return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min
@@ -39,7 +43,7 @@ export default function ScrollAnimatedListenNowBanner() {
 				</motion.div>
 			</div> */}
 			<section>
-				<ParallaxText baseVelocity={-2}><p>Listen Now</p>
+				<ParallaxText baseVelocity={-2}><p className="antialiased">Listen Now</p>
 					<div className="flex h-fit my-auto items-center justify-center ml-8 rounded-full border-2 p-2 text-xl font-semibold tracking-wide">
           BM
 					</div></ParallaxText>

@@ -1,17 +1,27 @@
-// import { Inter } from "next/font/google"
+import BigListenNowBanner from "./BigListenNowBanner"
+import Calendar from "./Calendar"
 import PrincipalSection from "./PrincipalSection"
 import ScrollAnimatedListenNowBanner from"./ScrollAnimatedListenNowBanner"
-// const inter = Inter({ subsets: ["latin"] })
+import TrackList from"./TrackList"
 
 export default function Home() {
 	return (
 		<main className="flex min-h-screen flex-col items-center justify-between overflow-hidden">
+			{/* principal section with a popular song/ trending and the image of the song with a button to play it */}
 			<PrincipalSection />
+
 			{/* listen now banner big with scrolling animation (framer motion example) */}
 			<ScrollAnimatedListenNowBanner />
+
 			{/* tracklist */}
+			<TrackList />
+
 			{/* calendario */}
+			<Calendar />
+
 			{/* last listen now very big with the same image in the begining */}
+			<BigListenNowBanner />
+
 
 			<div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
 				<svg
