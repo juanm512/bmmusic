@@ -1,3 +1,6 @@
+import Image from "next/image"
+import Link from "next/link"
+
 export default function Calendar() {
 	return(
 		<div className="w-full relative px-2 sm:px-16 py-24">
@@ -7,39 +10,179 @@ export default function Calendar() {
           Calendario
 				</h1>
 			</div>
-			<div className="relative h-px w-full bg-neutral-100/50" />
+			<div className="relative h-px w-full bg-neutral-800" />
 			<div className="relative flex flex-col sm:flex-row flex-wrap items-center justify-start">
 
-				<div className="w-1/2 h-96">
-					<div className="flex flex-row items-center justify-start p-8">
-						<p className="text-4xl font-normal text-neutral-300 uppercase">
-              TO
-						</p>
+				<div className="group relative basis-1/2 aspect-square border-b border-r border-neutral-800 bg-transparent overflow-hidden">
+					<div className="aspect-square h-full w-full flex flex-col justify-between p-8">
+						<div className="flex flex-col justify-start">
+							<Link href={""}
+								target="_blank"
+								className="text-5xl font-normal text-neutral-300 uppercase mb-2 hover:underline -tracking-wider w-fit"
+							>
+              Proyecto V
+							</Link>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- 20:00hs
+							</p>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- Junio 9, 2023
+							</p>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- Chivilcoy, BsAs
+							</p>
+						</div>
+						<div className="flex justify-center sm:justify-end items-start">
+							<Link 
+								href={""}
+								target="_blank"
+								className="text-xl sm:text-3xl font-normal text-neutral-300 uppercase hover:underline -tracking-wider" 
+							>
+              Comprar Entradas
+								<svg xmlns="http://www.w3.org/2000/svg" className="-mt-1 w-10 h-10 inline-block text-primary" width={24} height={24} viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M17 7l-10 10"></path>
+									<path d="M8 7l9 0l0 9"></path>
+								</svg>
+							</Link>
+						</div>
 					</div>
+					<Image
+						src="/cover.jpg"
+						alt="Picture of the author"
+						width={1920}
+						height={1080}
+						className="absolute aspect-square -z-10 inset-0 object-fill transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-80 blur"
+					/>
 				</div>
         
-				<div className="w-1/2 h-96">
-					<div className="flex flex-row items-center justify-start p-8">
-						<p className="text-4xl font-normal text-neutral-300 uppercase">
-                DO
-						</p>
+				<div className="group relative basis-1/2 aspect-square border-b border-neutral-800 bg-transparent overflow-hidden">
+					<div className="aspect-square h-full w-full flex flex-col justify-between p-8">
+						<div className="flex flex-col justify-start">
+							<Link href={""}
+								target="_blank"
+								className="text-5xl font-normal text-neutral-300 uppercase mb-2 hover:underline -tracking-wider w-fit"
+							>
+              Proyecto V
+							</Link>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- 20:00hs
+							</p>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- Junio 9, 2023
+							</p>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- Chivilcoy, BsAs
+							</p>
+						</div>
+						<div className="flex justify-center sm:justify-end items-start">
+							<Link 
+								href={""}
+								target="_blank"
+								className="text-xl sm:text-3xl font-normal text-neutral-300 uppercase hover:underline -tracking-wider" 
+							>
+              Comprar Entradas
+								<svg xmlns="http://www.w3.org/2000/svg" className="-mt-1 w-10 h-10 inline-block text-primary" width={24} height={24} viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M17 7l-10 10"></path>
+									<path d="M8 7l9 0l0 9"></path>
+								</svg>
+							</Link>
+						</div>
 					</div>
+					<Image
+						src="/cover.jpg"
+						alt="Picture of the author"
+						width={1920}
+						height={1080}
+						className="absolute aspect-square -z-10 inset-0 object-fill transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-80 blur"
+					/>
 				</div>
 
-				<div className="w-1/2 h-96">
-					<div className="flex flex-row items-center justify-start p-8">
-						<p className="text-4xl font-normal text-neutral-300 uppercase">
-              TO
-						</p>
+				<div className="group relative basis-1/2 aspect-square border-b border-r border-neutral-800 bg-transparent overflow-hidden">
+					<div className="aspect-square h-full w-full flex flex-col justify-between p-8">
+						<div className="flex flex-col justify-start">
+							<Link href={""}
+								target="_blank"
+								className="text-5xl font-normal text-neutral-300 uppercase mb-2 hover:underline -tracking-wider w-fit"
+							>
+              Proyecto V
+							</Link>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- 20:00hs
+							</p>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- Junio 9, 2023
+							</p>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- Chivilcoy, BsAs
+							</p>
+						</div>
+						<div className="flex justify-center sm:justify-end items-start">
+							<Link 
+								href={""}
+								target="_blank"
+								className="text-xl sm:text-3xl font-normal text-neutral-300 uppercase hover:underline -tracking-wider" 
+							>
+              Comprar Entradas
+								<svg xmlns="http://www.w3.org/2000/svg" className="-mt-1 w-10 h-10 inline-block text-primary" width={24} height={24} viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M17 7l-10 10"></path>
+									<path d="M8 7l9 0l0 9"></path>
+								</svg>
+							</Link>
+						</div>
 					</div>
+					<Image
+						src="/cover.jpg"
+						alt="Picture of the author"
+						width={1920}
+						height={1080}
+						className="absolute aspect-square -z-10 inset-0 object-fill transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-80 blur"
+					/>
 				</div>
 				
-				<div className="w-1/2 h-96">
-					<div className="flex flex-row items-center justify-start p-8">
-						<p className="text-4xl font-normal text-neutral-300 uppercase">
-                DO
-						</p>
+				<div className="group relative basis-1/2 aspect-square border-b border-neutral-800 bg-transparent overflow-hidden">
+					<div className="aspect-square h-full w-full flex flex-col justify-between p-8">
+						<div className="flex flex-col justify-start">
+							<Link href={""}
+								target="_blank"
+								className="text-5xl font-normal text-neutral-300 uppercase mb-2 hover:underline -tracking-wider w-fit"
+							>
+              Proyecto V
+							</Link>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- 20:00hs
+							</p>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- Junio 9, 2023
+							</p>
+							<p className="text-base font-normal text-neutral-300 uppercase">
+							-- Chivilcoy, BsAs
+							</p>
+						</div>
+						<div className="flex justify-center sm:justify-end items-start">
+							<Link 
+								href={""}
+								target="_blank"
+								className="text-xl sm:text-3xl font-normal text-neutral-300 uppercase hover:underline -tracking-wider" 
+							>
+              Comprar Entradas
+								<svg xmlns="http://www.w3.org/2000/svg" className="-mt-1 w-10 h-10 inline-block text-primary" width={24} height={24} viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M17 7l-10 10"></path>
+									<path d="M8 7l9 0l0 9"></path>
+								</svg>
+							</Link>
+						</div>
 					</div>
+					<Image
+						src="/cover.jpg"
+						alt="Picture of the author"
+						width={1920}
+						height={1080}
+						className="absolute aspect-square -z-10 inset-0 object-fill transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-80 blur"
+					/>
 				</div>
 			</div>
 			<div className="absolute left-[10%] top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
