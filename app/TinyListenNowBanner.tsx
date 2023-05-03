@@ -24,7 +24,7 @@ export default function TinyListenNowBanner() {
 	return (
 		<div className="relative w-full">
 			<div className="relative flex h-fit w-full flex-row flex-nowrap items-center justify-around gap-6 overflow-hidden whitespace-nowrap bg-primary py-2 text-sm font-semibold shadow-md shadow-primary/50 uppercase text-neutral-900">
-				<ParallaxText baseVelocity={-2}>
+				<ParallaxText baseVelocity={-1}>
 					{redes.map((red) => (
 						<>
 							<p className=" text-base tracking-wide">Escúchame en</p>
