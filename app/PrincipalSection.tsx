@@ -3,8 +3,8 @@ import ButtonPlay from "./ButtonPlay"
 
 export default function PrincipalSection() {
 	return (
-		<div className="relative px-2 sm:px-16">
-			<div className="relative my-8 h-px w-full bg-neutral-100/50" />
+		<div className="relative px-2 sm:px-16 my-4">
+			{/* <div className="relative my-8 h-px w-full bg-neutral-100/50" /> */}
 
 			<div className="flex flex-col items-center justify-center">
 				<div className="flex flex-col items-center justify-center">

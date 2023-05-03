@@ -52,7 +52,7 @@ export default function Calendar() {
 						alt="Picture of the author"
 						width={1920}
 						height={1080}
-						className="absolute aspect-square -z-10 inset-0 object-fill transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-80 blur"
+						className="absolute aspect-square -z-10 inset-0 object-cover sm:opacity-0 sm:group-hover:opacity-80 blur transition-all duration-1000 object-right group-hover:object-left"
 					/>
 				</div>
         
@@ -95,7 +95,7 @@ export default function Calendar() {
 						alt="Picture of the author"
 						width={1920}
 						height={1080}
-						className="absolute aspect-square -z-10 inset-0 object-fill transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-80 blur"
+						className="absolute aspect-square -z-10 inset-0 object-cover sm:opacity-0 sm:group-hover:opacity-80 blur transition-all duration-1000 object-right group-hover:object-left"
 					/>
 				</div>
 
@@ -138,7 +138,7 @@ export default function Calendar() {
 						alt="Picture of the author"
 						width={1920}
 						height={1080}
-						className="absolute aspect-square -z-10 inset-0 object-fill transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-80 blur"
+						className="absolute aspect-square -z-10 inset-0 object-cover sm:opacity-0 sm:group-hover:opacity-80 blur transition-all duration-1000 object-right group-hover:object-left"
 					/>
 				</div>
 				
@@ -181,7 +181,7 @@ export default function Calendar() {
 						alt="Picture of the author"
 						width={1920}
 						height={1080}
-						className="absolute aspect-square -z-10 inset-0 object-fill transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-80 blur"
+						className="absolute aspect-square -z-10 inset-0 object-cover sm:opacity-0 sm:group-hover:opacity-80 blur transition-all duration-1000 object-right group-hover:object-left"
 					/>
 				</div>
 			</div>

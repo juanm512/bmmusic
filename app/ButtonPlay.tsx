@@ -63,14 +63,20 @@ export default function ButtonPlay({classes} : {classes: string}) {
 					</textPath>
 				</text>
 			</svg>
-			<div className="absolute z-[-1] h-full w-full rounded-full bg-primary/90 shadow-2xl shadow-primary/90 ring-8 ring-neutral-900" />
+			<motion.div
+				key="bg"
+				initial={{ scale: 1.01 }}
+				animate={pressed ? { scale: [1.01, 1.02, 1.01, 1, 1.02, 1] } : {scale: [1, 1.001, 1, 1.005, 1]}}
+				transition={{ repeat: Infinity, repeatType: "reverse", repeatDelay: 0.5 }}
+				className="absolute z-[-1] h-full w-full rounded-full bg-primary/90 shadow-2xl shadow-primary/90 ring-8 ring-neutral-900" 
+			/>
 			<AnimatePresence>
 				<motion.div
 					key="hoveredBG"
 					animate={
 						hovered
 							? pressed
-								? { y: 15, x: 7.5 }
+								? { y: 15, x: 7.5, scale: [1.01, 1.01, 1.03, 1, 1.02, 1] }
 								: { y: 10, x: 5 }
 							: { y: 0, x: 0 }
 					}
@@ -80,6 +86,7 @@ export default function ButtonPlay({classes} : {classes: string}) {
 						damping: 20,
 						mass: 2,
 						// repeat: Infinity,
+						scale : { repeat: Infinity, repeatType: "reverse", repeatDelay: 0.1 },
 					}}
 					className="absolute -z-10 h-full w-full rounded-full bg-primary/20 shadow-xl shadow-primary/80 ring-8 ring-neutral-900"
 				/>
@@ -87,13 +94,13 @@ export default function ButtonPlay({classes} : {classes: string}) {
 				{pressed && (
 					<motion.div
 						key="pressedBG"
-						animate={{ y: 30, x: 15, scale: [1.01, 1.01, 1.02, 1, 1.01, 1] }}
+						animate={{ y: 30, x: 15, scale: [ 1.05, 1, 1.02, 1, 1.01, 1.01 ] }}
 						transition={{
 							type: "spring",
 							stiffness: 400,
 							damping: 20,
 							mass: 3,
-							scale : { repeat: Infinity, repeatType: "reverse", repeatDelay: 0.5 },
+							scale : { repeat: Infinity, repeatType: "reverse", repeatDelay: 0.2 },
 						}}
 						className="absolute -z-20 h-full w-full rounded-full bg-primary/20 shadow-xl shadow-primary/50 ring-8 ring-neutral-900"
 					/>

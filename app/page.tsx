@@ -19,6 +19,9 @@ export default function Home() {
 			{/* calendario */}
 			<Calendar />
 
+			{/* biografia? */}
+
+
 			{/* last listen now very big with the same image in the begining */}
 			<BigListenNowBanner />
 

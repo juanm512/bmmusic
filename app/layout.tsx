@@ -19,7 +19,7 @@ export default function RootLayout({
 		<html lang="es">
 			<body className={inter.className + " selection:bg-secondary selection:text-neutral-300"}>
 				<TinyListenNowBanner />
-				<NavBar />
+				{/* <NavBar /> */}
 				{children}
 				{/* footer */}
 				<NavBar />
