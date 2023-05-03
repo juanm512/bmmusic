@@ -5,15 +5,19 @@ import ParallaxText from "./ParallaxText"
 const redes = [
 	{
 		name: "Apple Music",
-		url: "https://music.apple.com/us/artist/benjamin-martinez/1555276360"
+		url: "https://music.apple.com/ar/artist/bm/1558455599"
 	},
 	{
 		name: "Spotify",
-		url: "https://open.spotify.com/artist/5Z3Z1Z2Z2Z2Z2Z2Z2Z2Z2Z"
+		url: "https://open.spotify.com/artist/5TP8Ubo4jLKEi4Mw2O8fAk"
 	},
 	{
 		name: "Youtube",
-		url: "https://www.youtube.com/channel/UCZ3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z"
+		url: "https://www.youtube.com/@BMCanalOficial/featured"
+	},
+	{
+		name: "Youtube-Music",
+		url: "https://music.youtube.com/channel/UCONxiz3pKjS32xC91ydXlvQ"
 	}
 ]
 export default function TinyListenNowBanner() {
@@ -24,11 +28,11 @@ export default function TinyListenNowBanner() {
 					{redes.map((red) => (
 						<>
 							<p className=" text-base tracking-wide">Escúchame en</p>
-							<button
+							<Link
 								key={red.name}
-								// href={red.url}
-								// target="_blank"
-								// rel="noopener noreferrer"
+								href={red.url}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="relative flex flex-row text-base -tracking-wide items-center justify-center px-6 hover:underline"
 							>
 								<p className="z-10 uppercase text-neutral-900 inline-flex">{red.name}</p>
@@ -37,7 +41,7 @@ export default function TinyListenNowBanner() {
 									<path d="M17 7l-10 10"></path>
 									<path d="M8 7l9 0l0 9"></path>
 								</svg>
-							</button>
+							</Link>
 						</>
 					))}
 				</ParallaxText>

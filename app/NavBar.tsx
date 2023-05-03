@@ -6,19 +6,23 @@ import React from "react"
 const redes = [
 	{
 		name: "Apple Music",
-		url: "https://music.apple.com/us/artist/benjamin-martinez/1555276360"
+		url: "https://music.apple.com/ar/artist/bm/1558455599"
 	},
 	{
 		name: "Spotify",
-		url: "https://open.spotify.com/artist/5Z3Z1Z2Z2Z2Z2Z2Z2Z2Z2Z"
+		url: "https://open.spotify.com/artist/5TP8Ubo4jLKEi4Mw2O8fAk"
 	},
 	{
 		name: "Youtube",
-		url: "https://www.youtube.com/channel/UCZ3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z3Z"
+		url: "https://www.youtube.com/@BMCanalOficial/featured"
+	},
+	{
+		name: "Youtube-Music",
+		url: "https://music.youtube.com/channel/UCONxiz3pKjS32xC91ydXlvQ"
 	},
 	{
 		name: "Instagram",
-		url: "https://www.instagram.com/benjaminmartinezmusic/"
+		url: "https://www.instagram.com/bm.oficial.ok/"
 	},
 	{
 		name: "Email",
@@ -37,11 +41,11 @@ export default function NavBar() {
 				</div>
 				<div className="flex flex-row flex-wrap items-center justify-around gap-0 text-base font-normal uppercase">
 					{redes.map((red) => (
-						<button
+						<Link
 							key={red.name}
-							// href={red.url}
-							// target="_blank"
-							// rel="noopener noreferrer"
+							href={red.url}
+							target="_blank"
+							rel="noopener noreferrer"
 							className="relative flex flex-col items-center justify-center px-6 py-1"
 							onMouseEnter={() => setHovered(red.name)}
 							onMouseLeave={() => setHovered("none")}
@@ -71,7 +75,7 @@ export default function NavBar() {
 								)}
 							</AnimatePresence>
 							<span className="z-10 mix-blend-exclusion">{red.name}</span>
-						</button>
+						</Link>
 					))}
 				</div>
 			</div>
